@@ -78,4 +78,4 @@ SELECT * FROM changed_prices
 UNION
 SELECT product_id, 10 AS price
 FROM products
-WHERE product_id NOT IN (SELECT product_id FROM changed_prices);```
+WHERE product_id NOT IN (SELECT product_id FROM changed_prices);
