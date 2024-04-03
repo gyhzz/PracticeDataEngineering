@@ -42,11 +42,9 @@ Queue table:\
 
 Output: 
 
-+-------------+
 | person_name |
-+-------------+
+|-------------|
 | John Cena   |
-+-------------+
 
 Explanation: The folowing table is ordered by the turn for simplicity.
 
