@@ -55,3 +55,27 @@ insert into Products (product_id, new_price, change_date) values ('2', '65', '20
 insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')
 
 ### Solution
+
+```sql
+WITH cte AS (
+    SELECT
+        product_id,
+        MAX(change_date) AS last_date
+    FROM products
+    WHERE change_date <= '2019-08-16'
+    GROUP BY product_id
+)
+
+, changed_prices AS (
+    SELECT
+        product_id,
+        new_price AS price
+    FROM products
+    WHERE (product_id, change_date) IN (SELECT product_id, last_date FROM cte)
+)
+
+SELECT * FROM changed_prices
+UNION
+SELECT product_id, 10 AS price
+FROM products
+WHERE product_id NOT IN (SELECT product_id FROM changed_prices);```
