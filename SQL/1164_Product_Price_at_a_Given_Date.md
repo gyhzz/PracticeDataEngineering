@@ -54,9 +54,12 @@ insert into Products (product_id, new_price, change_date) values ('1', '35', '20
 insert into Products (product_id, new_price, change_date) values ('2', '65', '2019-08-17')\
 insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')
 
-### Solution 1
+### Solution
 
 ```sql
+
+-- Solution 1
+
 WITH cte AS (
     SELECT
         product_id,
@@ -78,11 +81,11 @@ SELECT * FROM changed_prices
 UNION
 SELECT product_id, 10 AS price
 FROM products
-WHERE product_id NOT IN (SELECT product_id FROM changed_prices);```
+WHERE product_id NOT IN (SELECT product_id FROM changed_prices);
 
-### Solution 2
+-- Solution 2
 
-```WITH cte AS (
+WITH cte AS (
     SELECT
         product_id,
         new_price,
