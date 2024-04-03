@@ -52,6 +52,6 @@ insert into Products (product_id, new_price, change_date) values ('2', '50', '20
 insert into Products (product_id, new_price, change_date) values ('1', '30', '2019-08-15')\
 insert into Products (product_id, new_price, change_date) values ('1', '35', '2019-08-16')\
 insert into Products (product_id, new_price, change_date) values ('2', '65', '2019-08-17')\
-insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')\
+insert into Products (product_id, new_price, change_date) values ('3', '20', '2019-08-18')
 
 ### Solution
