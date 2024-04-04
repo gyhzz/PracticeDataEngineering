@@ -28,7 +28,7 @@ Test your knowledge of data engineering concepts, tools, and best practices with
 22. Explain the concept of 'Data Marts'.
 23. What are the benefits of using cloud storage for data engineering?
 24. Define 'Big Data'.
-25. What is 'Data Lakeshous'?
+25. What is a 'Data Lakeshouse'?
 26. Describe the role of a 'Data Catalog'.
 27. What is 'Data Obfuscation', and why is it important?
 28. How does 'Data Indexing' improve database performance?
@@ -54,6 +54,9 @@ Test your knowledge of data engineering concepts, tools, and best practices with
 48. How do 'Data Governance Frameworks' assist organizations?
 49. Explain the role of 'Data Stewardship'.
 50. What is 'ELT', and how does it differ from ETL?
+51. Describe the differences between schema-on-read and schema-on-write and what are their use cases.
+52. Explain Alluxio.
+53. Explain Databricks platform.
 
 ---
 
