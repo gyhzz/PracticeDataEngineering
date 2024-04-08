@@ -61,7 +61,7 @@ insert into RequestAccepted (requester_id, accepter_id, accept_date) values ('3'
 
 ```sql
 
--- Solution 1: 
+-- Solution 1: If multiple people can have the same number of friends
 
 # Write your MySQL query statement below
 
@@ -88,3 +88,50 @@ SELECT
     number AS num
 FROM total_counts
 WHERE number = (SELECT MAX(number) FROM total_counts);
+
+-- Solution 2: If only 1 person can have highest number of friends
+
+WITH total_counts AS (
+    SELECT
+        id,
+        SUM(r_count) AS number
+    FROM
+        (SELECT
+            requester_id AS id,
+            COUNT(*) AS r_count
+        FROM requestaccepted
+        GROUP BY requester_id
+        UNION ALL
+        SELECT
+            accepter_id AS id,
+            COUNT(*) AS r_count
+        FROM requestaccepted
+        GROUP BY accepter_id) a
+    GROUP BY id)
+
+SELECT
+    id,
+    number AS num
+FROM total_counts
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
+
+-- Solution 3: Straightforward
+
+WITH cte AS (
+    SELECT
+        requester_id AS id
+    FROM requestaccepted
+    UNION ALL
+    SELECT
+        accepter_id AS id
+    FROM requestaccepted)
+
+SELECT
+    id,
+    COUNT(*) AS num
+FROM cte
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
