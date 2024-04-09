@@ -1,6 +1,8 @@
-# 1341. Movie Rating
+# 1341. Movie Rating (Medium)
 
 Link to question: https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

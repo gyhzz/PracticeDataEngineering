@@ -1,6 +1,8 @@
-# 602. Friend Requests II: Who has the Most Friends?
+# 602. Friend Requests II: Who has the Most Friends? (Medium)
 
 Link to question: https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

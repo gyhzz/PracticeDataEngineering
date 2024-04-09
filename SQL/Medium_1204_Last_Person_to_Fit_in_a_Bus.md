@@ -1,4 +1,8 @@
-# 1204. Last Person to Fit in a Bus
+# 1204. Last Person to Fit in a Bus (Medium)
+
+Link to question: https://leetcode.com/problems/last-person-to-fit-in-the-bus/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

@@ -1,6 +1,8 @@
-# 585. Investments in 2016
+# 585. Investments in 2016 (Medium)
 
 Link to question: https://leetcode.com/problems/investments-in-2016/description/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

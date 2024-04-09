@@ -1,4 +1,8 @@
-# 1907. Count Salary Categories
+# 1907. Count Salary Categories (Medium)
+
+Link to question: https://leetcode.com/problems/count-salary-categories/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

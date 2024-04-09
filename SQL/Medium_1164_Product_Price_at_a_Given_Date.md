@@ -1,4 +1,8 @@
-# 1164. Product Price at a Given Date
+# 1164. Product Price at a Given Date (Medium)
+
+Link to question: https://leetcode.com/problems/product-price-at-a-given-date/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Medium
 
 ### Description
 

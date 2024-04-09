@@ -1,6 +1,8 @@
-# 1907. Count Salary Categories
+# 1978. Employees Whose Manager Left the Company (Easy)
 
 Link to question: https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50
+
+Difficulty: Easy
 
 ### Description
 
