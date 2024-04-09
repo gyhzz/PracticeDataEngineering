@@ -23,7 +23,7 @@ More information of sparkSession: https://spark.apache.org/docs/3.5.1/sql-gettin
 
 #### Operations with DataFrames
 
-`display(spark.table('products').select('name', 'price').filter('price < 200').orderBy('price'))`
+`display(spark.table('products').select('name', 'price').where('price < 200').orderBy('price'))`
 
 #### Transformations
 
