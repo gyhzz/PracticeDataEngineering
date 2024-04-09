@@ -4,7 +4,7 @@
 
 sparkSession: The entry point to all Spark functionalities such as session configuration, creating DataFrames, and running queries
 
-#### **`SparkSession`** Methods
+### **`SparkSession`** Methods
 
 More information of sparkSession: https://spark.apache.org/docs/3.5.1/sql-getting-started.html#starting-point-sparksession
 
@@ -17,15 +17,15 @@ More information of sparkSession: https://spark.apache.org/docs/3.5.1/sql-gettin
 | createDataFrame | Creates a DataFrame from a list of tuples, primarily used for testing |
 
 
-#### Operations with SQL
+### Operations with SQL
 
 `spark.sql("SELECT * FROM products WHERE price < 200 ORDER BY price")`
 
-#### Operations with DataFrames
+### Operations with DataFrames
 
 `display(spark.table('products').select('name', 'price').where('price < 200').orderBy('price'))`
 
-#### Transformations
+### Transformations
 
 | Transformation | Explanation |
 |----------------|-------------|
@@ -43,7 +43,7 @@ More information of sparkSession: https://spark.apache.org/docs/3.5.1/sql-gettin
 | `pivot(col, values)` | Pivots a column of the current DataFrame to perform specified aggregations. |
 
 
-#### Actions
+### Actions
 
 | Action | Explanation |
 |--------|-------------|
