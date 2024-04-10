@@ -76,7 +76,7 @@ WHERE conditions REGEXP '^DIAB1.*'
 OR conditions REGEXP '.* DIAB1.*';
 
 
--- Solution 2: Using Like
+-- Solution 2: Using LIKE
 
 SELECT
     patient_id,
