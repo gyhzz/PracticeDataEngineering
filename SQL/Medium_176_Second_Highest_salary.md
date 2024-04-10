@@ -68,7 +68,7 @@ insert into Employee (id, salary) values ('3', '300')
 
 It seems simple enough to get the second highest salary by applying a rank ordered by salary in descending order and getting the second rank, but you'll realise you can't get null when you try to filter for rank 2.
 
-You have to figure out what function will be able to return a null value. One way is to use the IFNULL(<result set>, null) function such that if result is empty, you can return null instead. Or, when aggregating an empty result set, SQL returns null by default.
+You have to figure out what function will be able to return a null value. One way is to use the IFNULL(, null) function such that if result set passed to the IFNULL function is empty, set it to return null. Or, when aggregating an empty result set, SQL returns null by default.
 
 Also, consider edge cases where there could be multiple occurences of highest salary, multiple occurences of second highest salary.
 
