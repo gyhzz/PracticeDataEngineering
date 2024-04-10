@@ -64,7 +64,7 @@ insert into Employee (id, salary) values ('1', '100')\
 insert into Employee (id, salary) values ('2', '200')\
 insert into Employee (id, salary) values ('3', '300')
 
-### What's tricky about this question? (Spoiler)
+### What's the trick? (Spoiler)
 
 It seems simple enough to get the second highest salary by applying a rank ordered by salary in descending order and getting the second rank, but you'll realise you can't get null when you try to filter for rank 2.
 
