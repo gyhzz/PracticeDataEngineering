@@ -70,7 +70,7 @@ insert into Activities (sell_date, product) values ('2020-05-30', 'T-Shirt')
 
 ### What's the trick? (Spoiler)
 
-In order to concatenate all values of a group together into a single string, you need to use the function GROUP_CONCAT. This function takes all the values in a group and concatenate them together. You can define distinct values, the order, as well as the concatenanting string,
+In order to concatenate all values of a group together into a single string, you need to use the function GROUP_CONCAT. This function takes all the values in a group and concatenate them together. You can define distinct values, the order, as well as the concatenanting string.
 
 ### Solution
 
