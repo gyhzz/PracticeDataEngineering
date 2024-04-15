@@ -76,11 +76,11 @@ insert into Users (user_id, name, mail) values ('7', 'Shapiro', '.shapo@leetcode
 
 Straight-forward regex string matching question. 
 
-$[A-Za-z]: Check that the first character of the email address is a letter
+^[A-Za-z]: Check that the first character of the email address is a letter
 
 [A-Za-z0-9_.-]*: Check that the email address only contain letters, numbers, and the 3 allowed characters '_', '.', '-', zero or more times
 
-@leetcode[.]com: Check that the domain of the email address is @leetcode.com. The [.] is to match an actual period instead of the regex meaning of . (match any single character). One of the edge cases will have a domain of @leetcode?com and this will cover it.
+@leetcode[.]com$: Check that the domain of the email address is @leetcode.com. The [.] is to match an actual period instead of the regex meaning of . (match any single character). One of the edge cases will have a domain of @leetcode?com and this will cover it. Also check that this is the last part of the string and nothing comes after this.
 
 ### Solution
 
