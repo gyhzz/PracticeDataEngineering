@@ -5,6 +5,8 @@ Welcome to the `GCP-PDE` folder of our Data Engineering practice repository. Thi
 All resources are curated from the Official Google Cloud Certified Professional Data Engineer Study Guide by Dan Sullivan:
 https://www.oreilly.com/library/view/official-google-cloud/9781119618430/
 
+![alt text](https://learning.oreilly.com/library/cover/9781119618430/250w/)
+
 ## About the GCP PDE Certification
 
 The Google Cloud Professional Data Engineer certification validates a professional's ability to use data engineering technologies effectively on Google Cloud Platform. It emphasizes the ability to design, build, operationalize, secure, and monitor data processing systems.
