@@ -1,5 +1,7 @@
 # Chapter 3: Designing Data Pipelines
 
+Correct answers for each question can be found below.
+
 ## Question 1
 
 **A large enterprise using GCP has recently acquired a startup that has an IoT platform. The enterprise wants to migrate the IoT platform from an on-premises data center to GCP and intends to use Google Cloud managed services whenever possible. What GCP service would you recommend for ingesting IoT data?**
@@ -9,8 +11,6 @@ B. Cloud SQL
 C. Cloud Pub/Sub  
 D. BigQuery streaming inserts  
 
-**Correct Answer: C**  
-_Explanation: Cloud Pub/Sub is ideal for ingesting real-time data on a large scale, such as data from IoT devices, making it suitable for this scenario._
 
 ## Question 2
 
@@ -21,5 +21,11 @@ B. Transformation
 C. Storage  
 D. Analysis  
 
-**Correct Answer: B**  
+---
+
+
+**Question 1 Correct Answer: C**  
+_Explanation: Cloud Pub/Sub is ideal for ingesting real-time data on a large scale, such as data from IoT devices, making it suitable for this scenario._
+
+**Question 2 Correct Answer: B**  
 _Explanation: The transformation stage of a data pipeline is the most appropriate point to implement data quality rules, as it allows for the data to be cleaned and transformed before storage and analysis._
