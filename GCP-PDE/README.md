@@ -1,6 +1,6 @@
 # GCP-PDE Exam Preparation
 
-Welcome to the `GCP-PDE` folder of our Data Engineering practice repository. This section is dedicated to providing resources, study notes, and mock questions for the Google Cloud Professional Data Engineer (GCP PDE) certification exam. Whether you're starting your preparation or looking to finalize your understanding before the exam, you'll find valuable materials here to assist you.
+Welcome to the `GCP-PDE` folder of our PracticeDataEngineering repository. This section is dedicated to providing resources, study notes, and mock questions for the Google Cloud Professional Data Engineer (GCP PDE) certification exam. Whether you're starting your preparation or looking to finalize your understanding before the exam, you'll find valuable materials here to assist you.
 
 All resources are curated from the Official Google Cloud Certified Professional Data Engineer Study Guide by Dan Sullivan:
 https://www.oreilly.com/library/view/official-google-cloud/9781119618430/
