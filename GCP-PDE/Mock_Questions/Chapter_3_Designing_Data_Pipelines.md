@@ -70,3 +70,4 @@ _Explanation: In Google Cloud Pub/Sub, if the consumer does not acknowledge the 
 
 **Question 5 Correct Answer: A**  
 _Explanation: Making processing logic idempotent is crucial because Cloud Pub/Sub does not guarantee exactly-once delivery; it operates with at-least-once delivery semantics, where a message might be delivered more than once. Idempotent processing ensures that the repeated handling of the same message does not affect the final outcome, thereby preventing data inconsistencies or duplicates. This makes it particularly important to handle potentially duplicated messages appropriately._
+
