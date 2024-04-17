@@ -26,10 +26,10 @@ D. Analysis
 
 **A team of data warehouse developers is migrating a set of legacy Python scripts that have been used to transform data as part of an ETL process. They wopuld like to use a service that allows them to use Python and requires minimal administration and operations support. Which GCP service would you recommend?**
 
-A. Cloud Dataproc
-B. Cloud Dataflow
-C. Cloud Spanner
-D. Cloud Dataprep
+A. Cloud Dataproc  
+B. Cloud Dataflow  
+C. Cloud Spanner  
+D. Cloud Dataprep  
 
 
 ## Question 4
