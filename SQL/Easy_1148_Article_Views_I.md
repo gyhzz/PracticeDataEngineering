@@ -1,4 +1,4 @@
-# 1148. Article Views (Easy)
+# 1148. Article Views I (Easy)
 
 Link to question: https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50
 
