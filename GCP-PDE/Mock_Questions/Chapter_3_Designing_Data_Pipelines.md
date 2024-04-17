@@ -24,7 +24,7 @@ D. Analysis
 
 ## Question 3
 
-**A team of data warehouse developers is migrating a set of legacy Python scripts that have been used to transform data as part of an ETL process. They wopuld like to use a service that allows them to use Python and requires minimal administration and operations support. Which GCP service would you recommend?**
+**A team of data warehouse developers is migrating a set of legacy Python scripts that have been used to transform data as part of an ETL process. They would like to use a service that allows them to use Python and requires minimal administration and operations support. Which GCP service would you recommend?**
 
 A. Cloud Dataproc  
 B. Cloud Dataflow  
@@ -42,6 +42,16 @@ C. The new code disabled acknowledgments from the consumer
 D. The new code changed the subscription from pull to push  
 
 
+## Question 5
+
+**It is considered a good practice to make your processing logic idempotent when consuming messages from a Cloud Pub/Sub topic. Why is that?**
+
+A. Messages may be delivered multiple times.  
+B. Messages may be received out of order.  
+C. Messages may be delivered out of order.  
+D. A consumer service may need to wait extended periods of time between the delivery of messages.
+
+
 
 ---
 
@@ -57,3 +67,6 @@ _Explanation: Cloud Dataflow is an ideal choice for this scenario as it provides
 
 **Question 4 Correct Answer: C**  
 _Explanation: In Google Cloud Pub/Sub, if the consumer does not acknowledge the messages after processing them, the service considers the messages unprocessed and will redeliver them. This issue can occur if acknowledgments are disabled, leading to repeated delivery of the same messages._
+
+**Question 5 Correct Answer: A**  
+_Explanation: Making processing logic idempotent is crucial because Cloud Pub/Sub does not guarantee exactly-once delivery; it operates with at-least-once delivery semantics, where a message might be delivered more than once. Idempotent processing ensures that the repeated handling of the same message does not affect the final outcome, thereby preventing data inconsistencies or duplicates. This makes it particularly important to handle potentially duplicated messages appropriately._
