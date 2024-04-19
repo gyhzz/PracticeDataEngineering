@@ -102,7 +102,7 @@ insert into Transactions (transaction_id, visit_id, amount) values ('13', '2', '
 
 ### What's the trick? (Spoiler)
 
-Simple aggregation question. There are 2 options to approach this question, using a sub query or using a LEFT JOIN. Using a LEFT JOIN may be more efficient than a NOT IN <sub query> especially if the table in the sub query is large, but a sub query may be more readable than a LEFT JOIN.
+Simple aggregation question. There are 2 options to approach this question, using a sub query or using a LEFT JOIN. Using a LEFT JOIN may be more efficient than a NOT IN sub query especially if the table in the sub query is large, but a sub query may be more readable than a LEFT JOIN.
 
 ### Solution
 
