@@ -69,7 +69,7 @@ If having multiple join conditions is confusing, you can also do the temperature
 
 Besides join, you can also use the LAG() window function which returns a value that comes before the current in the order your specify. Here, LAG(temperature) will return the temperature from the row where its recordDate comes before the recordDate of the current row in the sequence of (ORDER BY recordDate ASC). This way, you can have the temperature values you need to compare in the same record and you can perform a simple filtering (WHERE temperature > prev_temperature).
 
-Same for the LAG(recordDate), this will return the previous record date in the sequence and is to enforce that for a record to be selected, the recordDate of the current row must equal to the recordDate of the previous sequence + 1 day, effectively previous day.
+Same for the LAG(recordDate), this will return the previous recordDate in the sequence and is to enforce that for a record to be selected, the recordDate of the current row must equal to the recordDate of the previous sequence + 1 day, effectively previous day.
 
 ### Solution
 
