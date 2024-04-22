@@ -63,7 +63,7 @@ insert into Weather (id, recordDate, temperature) values ('4', '2015-01-04', '30
 
 ### What's the trick? (Spoiler)
 
-For this question you need to find a way to compare values from different rows and you can do this using a self join. You can use an INNER JOIN clause to join the table with itself by matching dates where one directly comes after another, and you can have a second join condition where the temperature of the later day record is higher than the earlier day. From this join, only records of 2 cosecutive dates, as well as a higher temperature on the later day is returned.
+For this question you need to find a way to compare values from different rows and you can do this using a self join. You can use an INNER JOIN clause to join the table with itself by matching dates where one directly comes after another, and you can have a second join condition where the temperature of the later day record is higher than the earlier day. From this join, only records that are cosecutive dates, as well as a higher temperature on the later day is returned.
 
 If having multiple join conditions is confusing, you can also do the temperature check in a WHERE clause instead. The join will return all consequtive dates, and the where clause (WHERE w1.temperature > w2.temperature) will filter for only records that have a higher temperature than the previous day.
 
