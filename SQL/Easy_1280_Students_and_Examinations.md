@@ -142,7 +142,7 @@ Just joining the Students table with Examinations table will not give you the fu
 
 For example, Bob has taken the Math and Programming exams but not the Physics exam. This means there will be no Physics record for Bob in the Examinations table. When you try to do a count, you will not have the entry of Bob, Physics, 0.
 
-To address this, use a cartesian join of Students table with the Subjects table. This will give you a full list of all students with all subjects. Now, you can perform a LEFT JOIN with the examinations table and the subjects that students have taken exams for will be populated in the examinations table and subjects students have not taken exams for will be null. Perform a COUNT aggregation on a left joined column from the examinations table, grouped by student_id and subject_name will give you the correct exam counts, and 0 for nulls.
+To address this, use a cartesian join of Students table with the Subjects table. This will give you a full list of all students with all subjects. Now, you can perform a LEFT JOIN with the examinations table and the subjects that students have taken exams for will be populated in the examinations table and subjects students have not taken exams for will be null. Perform a COUNT aggregation on a left joined column from the examinations table, grouped by student_id and subject_name and this will give you the correct exam counts, together with the 0 you need for nulls.
 
 ### Solution
 
