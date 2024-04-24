@@ -66,11 +66,17 @@ By counting the number of times each manager's ID show up in the managerId colum
 
 The reason you need to perform a self join to get the name and not just use the name value when getting the managerId is because the names are actually of the employees managed by the manager, not the manager themselves. You need to find what are the names of the employees that have the manager's IDs.
 
+Below are 2 solutions - Aggregating to filter for managers with at least 5 employees under them, then joining the result with the employees table again to get the names, and another solution where the join is performed first, then aggregating the resulting table and filter.
+
+Solution 1 reduces the dataset by filtering before joining and will be especially performant when the number of managers with at least 5 employees is a small fraction of the full dataset. This reduces the number of rows needed to be compared.
+
+Solution 2 performs the join before performing the aggregation and filtering. This is also acceptable especially if you're working with a querying engine that is optimized for joins.
+
 ### Solution
 
 ```sql
 
--- Solution 1
+-- Solution 1: Aggregate first then join to get the name
 
 WITH cte AS (
     SELECT
@@ -86,3 +92,13 @@ SELECT
 FROM employee e
 INNER JOIN cte c
 ON e.id = c.managerid;
+
+-- Solution 2: Join firs then aggregate
+
+SELECT
+    e1.name
+FROM employee e1
+INNER JOIN employee e2
+ON e1.id = e2.managerId
+GROUP BY e2.managerId
+HAVING COUNT(*) >= 5;
