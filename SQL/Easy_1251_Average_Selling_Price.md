@@ -95,7 +95,7 @@ insert into UnitsSold (product_id, purchase_date, units) values ('2', '2019-03-2
 
 First of all, you need to associate the purchase dates with the price start and end dates and you can do this with an extra join condition of AND u.purchase_date BETWEEN p.start_date AND p.end_date. This ensures that you match the right units count with the price. You also need to use a LEFT JOIN instead of an INNER JOIN since there could be products that have not been sold and hence, will not have a record in the UnitsSold table. Their average selling price should be zero.
 
-The rest is pretty straightforward. To calculate average price, you need to the total revenue from all units sold, regardless of price, and divide it with the total number of units sold. SUM(u.units * p.price) will give you the total revenue of a product sold at different prices, and SUM(u.units) will give you the total units sold. Round this value to 2 decimal places.
+The rest is pretty straightforward. To calculate average price, you need to get the total revenue from all units sold, regardless of price, and divide it with the total number of units sold. SUM(u.units * p.price) will give you the total revenue of a product sold at different prices, and SUM(u.units) will give you the total units sold. Round this value to 2 decimal places.
 
 For products that have not sold any units, their SUM(u.units) value will be 0 and dividing by zero will produce a null value. You can use COALESCE or IFNULL functions with a 0 to replace that value with 0.
 
