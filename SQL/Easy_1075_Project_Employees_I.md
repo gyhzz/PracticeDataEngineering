@@ -96,7 +96,7 @@ Simple aggregation question.
 
 ```sql
 
--- Solution 1: Using LAG() window function
+-- Solution 1:
 
 SELECT
     p.project_id,
